@@ -2,30 +2,99 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-
+    font-family: 'Golos Text', sans-serif;
+    overflow: hidden;
 }
 body {
-    background-image: url('https://www.businessinsider.in/photo/87274504/best-diy-wallpapers-india.jpg?imgsize=256946');
-    height: 100vh
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    height: 100vh;
     width: 100vw;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
+    position: absolute;
+    top: 5px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 20px;
-    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
     height: 50px;
     padding: 20px;
     opacity: 10;
-    border-radius: 5px;
-    
+    border-radius: 1rem;
 }
+
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    transition: 0.2s ease-in-out;
+    color: black    ;
+}
+
+.navbar a:hover {
+    background-color: #ffcdcdbb;
+    color: black;
+}
+
 .box {
-    height: 200px;
-    width: 200px;
+    height: 600px;
+    width: 500px;
+    background-image: linear-gradient(to top, #ebc0fd63 0%, #d9ded85f 100%);
+    width: 50%;
+    padding: 8px;
+    margin-top: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    background-color:cadetblue ;
-    color: #fff;
+    gap: 10px;
+  }
+
+
+  .box img {
+    height: 280px;
+    border-radius: 1rem;
+  }
+
+  .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: center !important;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .about h1 {
+    text-decoration: underline;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-right {
+    height: 100%;
+    width: 50%;
   }
